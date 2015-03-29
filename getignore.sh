@@ -1,3 +1,4 @@
+#!/bin/sh
 PWD_GITIGNORE="$(pwd)/.gitignore"
 if [ ! -f $PWD_GITIGNORE ]; then 
   echo "Getting $1.gitignore"
