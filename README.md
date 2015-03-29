@@ -8,7 +8,7 @@ A simple script to fetch language-specific `.gitignore` files from [Github's rep
 Installing can be handled automatically by running this command:
 
 ```sh
-$ curl http://git.io/jgNS | sudo sh
+curl http://git.io/jgNS | sudo sh
 ```
 
 Manual installation can also be done by cloning this repository and executing `install.sh`. You may need to run `chmod +x ./install.sh` to ensure that `install.sh` is executable.
