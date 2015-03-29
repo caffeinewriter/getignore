@@ -1,6 +1,10 @@
 #!/bin/sh
 PWD_GITIGNORE="$(pwd)/.gitignore"
-if [ ! -f $PWD_GITIGNORE ]; then 
+if [ -z "$1" ]; then
+  echo "Usage: $0 <gitignore name>"
+  echo "Example gitignore names: Node, Android, Grails"
+  echo "Check https://github.com/github/gitignore for a complete and updated list."
+elif [ ! -f $PWD_GITIGNORE ]; then 
   echo "Getting $1.gitignore"
   curl -s -f -o $PWD_GITIGNORE "https://raw.githubusercontent.com/github/gitignore/master/$1.gitignore"
   if [ -f $PWD_GITIGNORE ]; then
