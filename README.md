@@ -13,6 +13,8 @@ curl http://git.io/jgNS | sudo sh
 
 Manual installation can also be done by cloning this repository and executing `install.sh`. You may need to run `chmod +x ./install.sh` to ensure that `install.sh` is executable.
 
+Also, [getignore.sh](https://raw.githubusercontent.com/caffeinewriter/getignore/master/getignore.sh) may simply be added to any directory in your `PATH`, as long as it's given executable permissions.
+
 ##Usage
 
 You may run `getignore` with no arguments for basic instructions.
